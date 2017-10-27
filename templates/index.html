@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Amazon Notification Service</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/main.css" rel="stylesheet">
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    
+  </head>
+ 
+  <body>
+ 
+    <div class="container">
+      <div class="header">
+   
+        <h3 class="text-muted">Search and Subscribe Product</h3>
+      </div>
+ 
+      <div class="jumbotron">
+        <center><h1>Search Product</h1></center><!--TODO: add the category dropdown -->
+        <form class="form-signin">
+        <div class="row">
+        <div class="col-sx-6">
+          <label for="inputName" class="sr-only">Search Product</label>
+          <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Search Product" required autofocus>
+          </div>
+           
+        <div class="col-xs-6" >
+          <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Search</button>
+          </div>
+        </div>
+        
+
+      </form>
+      <div class="row">
+          <div class="col-xs-12">
+            <label for="inputName" class="sr-only">Search Product</label>
+            <a id="signedURL"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- List of searched product -->
+       
+ 
+      <footer class="footer">
+        <p>&copy; pradeep.mit082@gmail.com</p>
+      </footer>
+ 
+    </div>
+  </body>
+</html>
