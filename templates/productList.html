@@ -1,0 +1,18 @@
+
+<div class="row">
+   {% for rec in result %}
+    <div class="col-xs-6">
+         <input type="checkbox" id="SelectedProduct" data-id={{rec['ASIN']}} value={{rec['ASIN']}} name="checkBox"/>
+         <div class="col-xs-3" style="display: block;">
+            <a href={{rec['DetailPageURL']}}><img src={{rec['MediumImage']['URL']}} style="width:{{rec['MediumImage']['Width']}}px; height:{{rec['MediumImage']['Height']}}px;"></a>
+
+         </div>
+         <div class="col-xs-3">
+            <span>{{rec['Title']}}</span><br/>
+            <span>by {{rec['Brand']}}</span><br/>
+            <span class="currencyINR" style="color:green;">{{rec['SalePrice']['FormattedPrice']}}</span> &nbsp;&nbsp; <span class="a-size-base-plus a-color-secondary a-text-strike"><span class="currencyINR" style="text-decoration: line-through;color:red;">{{rec['ListPrice']['FormattedPrice']}}</span></span>
+         </div>
+    </div>
+{% endfor %}
+ </div>
+
